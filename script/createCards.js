@@ -32,8 +32,15 @@ const createCard =  (err, data) => {
 
         const h1 = document.createElement('h1');
         h1.className = 'card__title';
-        h1.textContent = `${item.title}`
         
+        
+        const a = document.createElement('a');
+        a.href = `${item.url}`
+        a.className = 'card__title-link';
+        a.textContent = `${item.title}`;
+        a.target = '_black';
+        h1.append(a)
+
         const cardDescription = document.createElement('p');
         cardDescription.className = 'card__description';
         const discript = fixProp(item.description);

@@ -38,3 +38,12 @@
     justify-content: space-between;
     padding:  0 5px;
 }
+
+.card__title-link, .card__title-link:focus, 
+.card__title-link:visited {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration: none;
+    color: #212121
+}

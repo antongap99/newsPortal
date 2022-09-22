@@ -140,8 +140,12 @@ const newsApiController = () => {
         e.preventDefault();
         const countCard = 8;
         const url = `https://newsapi.org/v2/everything?q=keyword&pageSize=${countCard}&apiKey=${apiKey}`;
+        // renderCards(url, container);
 
-            renderCards(url, container);
+        //закончились бесплатные запросты
+        const jsonUrl =  './script/file.json'
+        renderCards(jsonUrl, container);
+            
 
         });
         
