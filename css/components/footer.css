@@ -1,0 +1,39 @@
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0;
+    align-items: center;
+}
+
+.footer__list {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.footer__copy-paste{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 130%;
+    color: #212121;
+    align-self: flex-end ;
+    margin: 0;
+}
+.item__link_twitter {
+    background-image: url('../../img/twitter.png');
+}
+.item__link_noname {
+    background-image: url('../../img//nonamepng.png');
+}
+.item__link_vk {
+    background-image: url('../../img/vk.png');
+}

@@ -1,0 +1,26 @@
+.main__title {
+    font-size: 26px;
+    line-height: 130%;
+    color: #212121;
+    
+    margin: 0;
+    padding:  17.5px 10px;
+}
+.main, .section__title{
+    outline: 1px solid #E6E6E6;
+    margin-bottom: 10px;
+}
+
+.card__container {
+    margin-bottom: 10px;
+}
+
+
+
+.headlines__title {
+    font-size: 26px;
+    line-height: 130%;
+    color: #212121;
+    margin: 0;
+    padding: 17.5px 10px;
+}

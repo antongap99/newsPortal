@@ -1,0 +1,43 @@
+@media (max-width: 1140px) {
+    .header__container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header__logo{
+        justify-content: center;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .form-search{
+        flex-direction: column;
+        gap: 10px;
+        max-width: 850px;
+    }
+    .header__location{
+        max-width: 100%;
+    }
+    .header__search {
+        max-width: 100%;
+    }
+    .select__box {
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 505px) {
+    .form-search{
+        width: 100%;
+    }
+   
+    .select__box {
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+}

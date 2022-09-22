@@ -1,0 +1,10 @@
+@import url(./assert/normalize.css);
+@import url(./assert/font.css);
+@import url(./assert/normalize.css);
+@import url(./assert/main.css);
+@import url(./components/header.css);
+@import url(./components/footer.css);
+@import url(./components/mainSection.css);
+@import url(./components/card.css);
+@import url(./components/preload.css);
+@import url(./mediaq/table.css);
