@@ -48,7 +48,7 @@ const newsApiController = () => {
             main.removeChild(main.firstElementChild);
             main.removeChild((main.firstElementChild));
         }
-      
+
         const from = '2022-08-21'
         const to = '2022-09-20'
         // const country = 'ru'
