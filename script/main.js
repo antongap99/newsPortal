@@ -48,6 +48,7 @@ const newsApiController = () => {
 
         const from = '2022-08-21'
         const to = '2022-09-20'
+        // const country = 'ru'
         const countCard = 8;
         const countCardEvery = 4;
         const URLHEADLINES = `https://newsapi.org/v2/top-headlines?q=${formSearch.input.value}&pageSize=${countCard}&apiKey=28bda8837c2c4e6daf7d725aef19ea46`
@@ -98,12 +99,11 @@ const newsApiController = () => {
         return fetchRequest(url ,{
             headers: {
                 'X-Api-Key': `${apiKey}`,
-                mode: 'no-cors',
+                // mode: 'no-cors',
             },
             callback: createCard,
             })
             .then((result) => {
-                cardResult = result.data.totalResults;
                 const imgs =  result.data.articles.map((item) => item.urlToImage);
                 const prom = Promise.allSettled(imgs.map(img => loadImg(new Error('not found'), img)));
 
