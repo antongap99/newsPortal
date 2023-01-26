@@ -102,6 +102,7 @@ const newsApiController = () => {
         return fetchRequest(url ,{
             headers: {
                 'X-Api-Key': `${apiKey}`,
+                mode: 'no-cors',
             },
             callback: createCard,
             })
