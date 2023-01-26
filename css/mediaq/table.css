@@ -8,7 +8,7 @@
         margin-right: 0;
     }
     .wrapper{
-        padding: 0 10px;
+        padding: 10px 10px;
     }
 }
 
@@ -29,6 +29,10 @@
         width: 100%;
         max-width: 100%;
     }
+
+    .search__input {
+        align-self: center;
+    }
 }
 
 
@@ -36,11 +40,11 @@
     .form-search{
         width: 100%;
     }
-   
+
     .select__box {
         justify-content: center;
         width: 100%;
         max-width: 100%;
     }
-    
+
 }

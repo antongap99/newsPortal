@@ -1,6 +1,7 @@
 .wrapper {
     max-width: 1150px;
     margin: 0 auto;
+    padding: 10px 0;
 }
 html{
     box-sizing: border-box;
