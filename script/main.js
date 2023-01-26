@@ -11,6 +11,7 @@ const newsApiController = () => {
     const formSearch = document.querySelector('.form-search');
     const container = document.querySelector('.card__container');
 
+
     const addHeadlinesContainer  = (inputValue, countCard) => {
         const main = document.querySelector('.main');
 
@@ -99,7 +100,7 @@ const newsApiController = () => {
         return fetchRequest(url ,{
             headers: {
                 'X-Api-Key': `${apiKey}`,
-                // mode: 'no-cors',
+                mode: 'no-cors',
             },
             callback: createCard,
             })
