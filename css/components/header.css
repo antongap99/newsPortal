@@ -49,6 +49,7 @@
     line-height: 80%;
     color: #212121;
     border: none;
+    cursor: pointer;
 }   
 
 .select__box {
