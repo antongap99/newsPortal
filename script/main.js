@@ -1,7 +1,5 @@
 import createCard from './createCards.js'
-import './createRequest.js'
-import fetchFunc from './fetchreq.js';
-const {fetchRequest} = fetchFunc;
+import {fetchRequest} from './fetchreq.js';
 import preload from './preload.js';
 import loadImg from './loud.js';
 
@@ -12,7 +10,6 @@ const newsApiController = () => {
  
     const formSearch = document.querySelector('.form-search');
     const container = document.querySelector('.card__container');
-    let cardResult = NaN;
 
     const addHeadlinesContainer  = (inputValue, countCard) => {
         const main = document.querySelector('.main');
@@ -51,7 +48,6 @@ const newsApiController = () => {
 
         const from = '2022-08-21'
         const to = '2022-09-20'
-        // const country = 'ru'
         const countCard = 8;
         const countCardEvery = 4;
         const URLHEADLINES = `https://newsapi.org/v2/top-headlines?q=${formSearch.input.value}&pageSize=${countCard}&apiKey=28bda8837c2c4e6daf7d725aef19ea46`
@@ -102,7 +98,7 @@ const newsApiController = () => {
         return fetchRequest(url ,{
             headers: {
                 'X-Api-Key': `${apiKey}`,
-                // mode: 'no-cors',
+                mode: 'no-cors',
             },
             callback: createCard,
             })

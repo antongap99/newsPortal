@@ -1,4 +1,4 @@
-const fetchRequest = async (url, { method = 'get', callback, body, headers}) => {
+export const fetchRequest = async (url, { method = 'get', callback, body, headers}) => {
     try {
         const options = {
             method,
@@ -29,6 +29,3 @@ const fetchRequest = async (url, { method = 'get', callback, body, headers}) => 
     }
 };
 
-export default {
-    fetchRequest,
-}
