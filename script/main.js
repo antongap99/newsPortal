@@ -106,7 +106,6 @@ const newsApiController = () => {
             callback: createCard,
             })
             .then((result) => {
-                console.log(result.data);
                 cardResult = result.data.totalResults;
                 const imgs =  result.data.articles.map((item) => item.urlToImage);
                 const prom = Promise.allSettled(imgs.map(img => loadImg(new Error('not found'), img)));
@@ -133,7 +132,11 @@ const newsApiController = () => {
                 .then(() => {
                     preload.remove();
                 })
-            })        
+            }).catch((err) => {
+                console.log(err.message);
+            }).finally(() => {
+                preload.remove();
+            })
     }
 
     window.addEventListener('DOMContentLoaded', (e) => {
