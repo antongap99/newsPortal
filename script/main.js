@@ -131,7 +131,7 @@ const newsApiController = () => {
                     preload.remove();
                 })
             }).catch((err) => {
-                console.log(err.message);
+                console.log('К сожелению апи платное, поэтому запрос проходит только с local хоста');
             }).finally(() => {
                 preload.remove();
             })
